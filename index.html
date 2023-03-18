@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Counter</title>
+</head>
+
+<body>
+    <section class="container mx-auto mt-10">
+        <div class="bg-black pb-16 pt-5 w-3/5 mx-auto rounded-lg">
+            <h1 class="text-white text-center text-[100px] font-bold">Counter</h1>
+            <!-- Counter Number -->
+            <div class="text-center">
+                <h1 class="text-[150px] text-blue-500 font-bold" id="number">
+                    0
+                </h1>
+                <!-- Buttons -->
+                <div class="space-x-5 mt-5">
+                    <button onclick="btnStart()"
+                        class="px-8 py-4 bg-blue-500 text-white font-semibold text-3xl rounded-lg">
+                        Start
+                    </button>
+                    <button onclick="btnStop()"
+                        class="px-8 py-4 bg-blue-500 text-white font-semibold text-3xl rounded-lg">
+                        Stop
+                    </button>
+                    <button onclick="btnReset()"
+                        class="px-8 py-4 bg-blue-500 text-white font-semibold text-3xl rounded-lg">
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- JavaScript File -->
+    <script src="main.js"></script>
+</body>
+
+</html>
